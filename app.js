@@ -10,7 +10,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do bicho, te mete?');
+    exibirTextoNaTela('h1', 'Jogo de azar.');
     exibirTextoNaTela('p', 'Escolhe o teu bicho entre 1 e 10.');
 }
 
