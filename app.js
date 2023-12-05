@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo de azar.');
-    exibirTextoNaTela('p', 'Escolhe o teu bicho entre 1 e 10.');
+    exibirTextoNaTela('p', 'Escolhe o teu número entre 1 e 10.');
 }
 
 exibirMensagemInicial();
@@ -21,7 +21,7 @@ function verificarChute() {
     
     if (chute == numeroSecreto) {
         exibirTextoNaTela('h1', 'Acertou!');
-        let palavraVez = tentativas > 1 ? 'tentativas' : 'tentativa';
+        let palavraVez = vezes > 1 ? 'vezes' : 'vez';
         let mensagemVezes = `Mandou bem nojento, e tu só tentou ${vezes} ${palavraVez}!`;
         exibirTextoNaTela('p', mensagemVezes);
         document.getElementById('reiniciar').removeAttribute('disabled');
